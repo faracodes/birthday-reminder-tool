@@ -1,3 +1,3 @@
 # first-repo
 
-by Fara and Oli
+by Fara Ifaturoti and Oli Haley
