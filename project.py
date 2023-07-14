@@ -1,8 +1,10 @@
-print("hello world")
-#Practicing python syntax
-oddnumber=3
-evennumber=2
-print(oddnumber*evennumber/7)
-largenumber=75
-smallnumber=3 
-print(largenumber%smallnumber)
+# Getting current date and time using now().
+
+# importing datetime module for now()
+import datetime
+
+# using now() to get current time
+current_time = datetime.datetime.now()
+
+# Printing value of now.
+print("Time now at greenwich meridian is:", current_time)
