@@ -15,3 +15,11 @@ f_date = date(2023, 7, 19)
 l_date = date(2024, 1, 1)
 delta = l_date - f_date
 print(delta.days)
+
+#Create a list of birthdays in an array with names 
+ 
+from datetime import date
+franks_birthday= date(1985, 6, 1)
+lucies_birthday= date(1999, 7, 3)
+johns_birthday= date(1972, 2, 22)
+maxines_birthday= date(1966,10,14)
