@@ -46,7 +46,23 @@ def get_next_birthday(birthdays):
         if next_birthday is None or this_year_birthday < next_birthday:
             next_birthday = this_year_birthday
     
-    return next_birthday
+    return next_birthday 
+
+#Time till next birthday 
+
+next_birthday = get_next_birthday(birthdays)
+print("Next birthday:", next_birthday)
+
+def time_till_next_birthday(next_birthday):
+    today = datetime.date.today()
+    time_till_birthday = next_birthday - today
+    return time_till_birthday
+
+next_birthday = get_next_birthday(birthdays)
+print("Next birthday:", next_birthday)
+
+time_till_birthday = time_till_next_birthday(next_birthday)
+print("Time till next birthday:", time_till_birthday)
 
 
 
