@@ -66,7 +66,12 @@ print("Next birthday:", next_birthday)
 time_till_birthday = time_till_next_birthday(next_birthday)
 print("Time till next birthday:", time_till_birthday)
 
+#Countdown Format 
+days = time_till_birthday.days
+hours, remainder = divmod(time_till_birthday.seconds, 3600)
+minutes, seconds = divmod(remainder, 60)
 
+print(f"Time till next birthday: {days} days, {hours} hours, {minutes} minutes, {seconds} seconds.")
 
 
  
