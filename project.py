@@ -1,8 +1,8 @@
-# importing datetime module for now()
+# importing datetime module for now() & the json module 
 
 import datetime
-import json
 from datetime import date
+import json
 
 class Person:
   def __init__(self, name, birthdate):
