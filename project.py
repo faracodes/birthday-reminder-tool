@@ -1,7 +1,8 @@
-# importing datetime module for now()
+# importing datetime module for now() & the json module 
 
 import datetime
 from datetime import date
+import json
 
 class Person:
   def __init__(self, name, birthdate):
@@ -38,17 +39,15 @@ def time_till_next_birthday(next_birthday):
     return time_till_birthday
 
 
-franks_birthday = Person("Frank", date(1985, 6, 1))
-lucies_birthday = Person("Lucie", date(1999, 7, 3))
-johns_birthday = Person("John", date(1972, 2, 22))
-suzies_birthday = Person("Suzie", date(2002, 2, 22))
+# Load birthdays from JSON file
+with open('birthdays.json') as f:
+    birthdays_data = json.load(f)
 
-#Creating an array of birthdays
-birthdays = [franks_birthday,lucies_birthday, johns_birthday, suzies_birthday]
+# Create Person instances from JSON data
+birthdays = [Person(person['name'], date.fromisoformat(person['birthdate'])) for person in birthdays_data]
 
-next_birthday , person_names = get_next_birthday(birthdays)
+next_birthday, person_names = get_next_birthday(birthdays)
 print(f"Next birthday on {next_birthday}: {', '.join(person_names)}")
-
 
 time_till_birthday = time_till_next_birthday(next_birthday)
 
