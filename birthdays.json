@@ -42,6 +42,10 @@
     {
         "name": "Linda",
         "birthdate": "2008-09-09"
+    },
+    {
+        "name": "Lola",
+        "birthdate": "1979-10-30"
     }
 ]
 

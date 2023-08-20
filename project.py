@@ -46,6 +46,7 @@ with open('birthdays.json') as f:
 # Create Person instances from JSON data
 birthdays = [Person(person['name'], date.fromisoformat(person['birthdate'])) for person in birthdays_data]
 
+
 next_birthday, person_names = get_next_birthday(birthdays)
 print(f"Next birthday on {next_birthday}: {', '.join(person_names)}")
 
