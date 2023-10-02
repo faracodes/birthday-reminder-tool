@@ -54,8 +54,8 @@ The application will then display the next birthday and the time remaining in th
 ### Example Output
 
 ```
-Next birthday: 2023-08-17
-Time till next birthday: 14 days, 5 hours, 28 minutes, 42 seconds.
+Next birthday on 2023-10-23: Ari
+Time till next birthday: 20 days, 15 hours, 25 minutes, 32 seconds.
 ```
 
 ### Notes
